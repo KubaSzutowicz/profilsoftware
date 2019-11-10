@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>zadanie</title>
+
+    <link href="style.css" rel="stylesheet">
+
+    <script src="scripts.js"></script>
+        <script src="script2.js"></script>
+</head>
+
+<body>
+  
+   
+ <center>
+    <form onsubmit="search(event)">
+        <input id="nameMovie" placeholder="Podaj nazwe filmu" /><br>
+        <input id="yearMovie" placeholder="Rok produkcji" type="number" /><br>
+        <button type="submit">Szukaj</button>
+    </form>
+
+    <form onsubmit="startSorting(event)">
+        Sortuj po
+        <select id="sortOption">
+            <option value="title">Tytul</option>
+            <option value="year">Rok</option>
+        </select>
+        <button type="submit">Sortuj</button>
+    </form></center>
+    <div id="root"></div>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
